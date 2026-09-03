@@ -56,7 +56,7 @@ export default function Contact() {
           <a href="https://github.com/riccardozorzan" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
             [GitHub]
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+          <a href="https://linkedin.com/in/riccardo-zorzan-772027189" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
             [LinkedIn]
           </a>
           <a href="mailto:riccardo@riccardozorzan.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">

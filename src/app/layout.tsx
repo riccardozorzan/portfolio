@@ -14,8 +14,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Riccardo Zorzan // Full Stack & Systems Developer",
+  metadataBase: new URL("https://riccardozorzan.com"),
+  title: {
+    default: "Riccardo Zorzan // Full Stack & Systems Developer",
+    template: "%s | Riccardo Zorzan",
+  },
   description: "Portfolio e laboratori di sviluppo software, infrastrutture Linux e architetture web.",
+  keywords: ["Full Stack Developer", "Systems Developer", "Linux", "Next.js", "React", "Sviluppo web", "Web developer"],
+  authors: [{ name: "Riccardo Zorzan" }],
+  creator: "Riccardo Zorzan",
+  openGraph: {
+    title: "Riccardo Zorzan // Full Stack & Systems Developer",
+    description: "Portfolio e laboratori di sviluppo software, infrastrutture Linux e architetture web.",
+    url: "https://riccardozorzan.com",
+    siteName: "Riccardo Zorzan Portfolio",
+    locale: "it_IT",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Riccardo Zorzan // Full Stack & Systems Developer",
+    description: "Portfolio e laboratori di sviluppo software, infrastrutture Linux e architetture web.",
+  },
 };
 
 export default async function RootLayout({
