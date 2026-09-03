@@ -44,7 +44,7 @@ export async function POST(req: Request) {
       from: "Portfolio Contact Form <onboarding@resend.dev>",
       to: ["riccardo@riccardozorzan.com"],
       subject: `[Portfolio Transmission] Message from ${name}`,
-      reply_to: cleanEmail,
+      replyTo: cleanEmail,
       text: `Name: ${name}\nEmail: ${cleanEmail}\n\nMessage:\n${message}`,
     });
 
