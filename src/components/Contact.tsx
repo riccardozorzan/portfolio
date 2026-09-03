@@ -59,7 +59,7 @@ export default function Contact() {
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
             [LinkedIn]
           </a>
-          <a href="mailto:tuo-email@example.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+          <a href="mailto:riccardo@riccardozorzan.com" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
             [Email]
           </a>
         </div>
