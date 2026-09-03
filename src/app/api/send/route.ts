@@ -14,6 +14,8 @@ export async function POST(req: Request) {
       );
     }
 
+    const cleanEmail = String(email).trim();
+
     const formData = new URLSearchParams();
     formData.append("secret", process.env.RECAPTCHA_SECRET_KEY || "");
     formData.append("response", gRecaptchaToken);
@@ -42,8 +44,8 @@ export async function POST(req: Request) {
       from: "Portfolio Contact Form <onboarding@resend.dev>",
       to: ["riccardo@riccardozorzan.com"],
       subject: `[Portfolio Transmission] Message from ${name}`,
-      replyTo: email,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      reply_to: cleanEmail,
+      text: `Name: ${name}\nEmail: ${cleanEmail}\n\nMessage:\n${message}`,
     });
 
     if (error) {
