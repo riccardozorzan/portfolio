@@ -1,5 +1,12 @@
 export const translations = {
   en: {
+    // Meta / SEO / PWA
+    meta: {
+      title: "Riccardo Zorzan | Full Stack & Systems Developer",
+      description: "Full Stack & Systems Developer based in Turin, Italy. Building high-performance web applications, serverless architectures, and digital systems.",
+      shortName: "RZ Portfolio",
+    },
+
     skills: "./skills",
     lab: "./lab",
     projects: "./projects",
@@ -86,6 +93,13 @@ export const translations = {
     skillLinux: "Linux Systems & Infrastructure",
   },
   it: {
+    // Meta / SEO / PWA
+    meta: {
+      title: "Riccardo Zorzan | Full Stack & Systems Developer",
+      description: "Progetto e sviluppo soluzioni web integrate, applicazioni web ad alte prestazioni e infrastrutture Linux con base a Torino.",
+      shortName: "RZ Portfolio",
+    },
+
     skills: "./competenze",
     lab: "./laboratorio",
     projects: "./progetti",
