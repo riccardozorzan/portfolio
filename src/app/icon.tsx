@@ -23,63 +23,22 @@ export default function Icon() {
         }}
       >
         <svg
-          width="24"
-          height="24"
-          viewBox="0 0 32 32"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 120 120"
+          width="22"
+          height="22"
+          fill="none"
+          stroke="#06b6d4"
+          strokeWidth="14"
+          strokeLinecap="square"
+          strokeLinejoin="miter"
         >
-          {/* R + Z merged monogram */}
-
-          {/* Vertical stem of the R */}
-          <path
-            d="M7 26V6H16"
-            stroke="#06b6d4"
-            strokeWidth="2"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
-          />
-
-          {/* Upper part / bowl of R */}
-          <path
-            d="M7 6H16C20.2 6 22.5 8.2 22.5 11.2C22.5 14.4 20.2 16 16 16H7"
-            stroke="#06b6d4"
-            strokeWidth="2"
-            strokeLinecap="square"
-            strokeLinejoin="miter"
-          />
-
-          {/* R leg + Z diagonal */}
-          <path
-            d="M14 16L24.5 26"
-            stroke="#67e8f9"
-            strokeWidth="2"
-            strokeLinecap="square"
-          />
-
-          {/* Z top */}
-          <path
-            d="M14 6H25"
-            stroke="#67e8f9"
-            strokeWidth="2"
-            strokeLinecap="square"
-          />
-
-          {/* Z diagonal */}
-          <path
-            d="M25 6L10 26"
-            stroke="#06b6d4"
-            strokeWidth="2"
-            strokeLinecap="square"
-          />
-
-          {/* Z bottom */}
-          <path
-            d="M10 26H25"
-            stroke="#67e8f9"
-            strokeWidth="2"
-            strokeLinecap="square"
-          />
+          <line x1="60" y1="16" x2="60" y2="104" />
+          <line x1="16" y1="16" x2="104" y2="16" />
+          <line x1="20" y1="20" x2="60" y2="60" />
+          <line x1="100" y1="20" x2="60" y2="60" />
+          <line x1="60" y1="60" x2="104" y2="104" />
+          <line x1="16" y1="104" x2="44" y2="104" />
         </svg>
       </div>
     ),
