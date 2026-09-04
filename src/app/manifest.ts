@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { cookies, headers } from "next/headers";
 import { translations } from "@/i18n/translations";
 
-export default async function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
   const cookieStore = await cookies();
   const savedLang = cookieStore.get("lang")?.value;
 
