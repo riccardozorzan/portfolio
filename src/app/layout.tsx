@@ -18,12 +18,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://riccardozorzan.com"),
   title: {
     default: "Riccardo Zorzan // Full Stack & Systems Developer",
-    template: "%s | Riccardo Zorzan",
+    template: "%s",
   },
   description: "Portfolio e laboratori di sviluppo software, infrastrutture Linux e architetture web.",
   keywords: ["Full Stack Developer", "Systems Developer", "Linux", "Next.js", "React", "Sviluppo web", "Web developer"],
   authors: [{ name: "Riccardo Zorzan" }],
   creator: "Riccardo Zorzan",
+  alternates: {
+    canonical: "https://riccardozorzan.com",
+    languages: {
+      en: "https://riccardozorzan.com?lang=en",
+      it: "https://riccardozorzan.com?lang=it",
+      "x-default": "https://riccardozorzan.com",
+    },
+  },
   openGraph: {
     title: "Riccardo Zorzan // Full Stack & Systems Developer",
     description: "Portfolio e laboratori di sviluppo software, infrastrutture Linux e architetture web.",
@@ -48,9 +56,8 @@ export default async function RootLayout({
   const themeCookie = cookieStore.get("theme");
   const isDark = themeCookie ? themeCookie.value === "dark" : true;
 
-  // for the future - if i wanted to store it in a cookie
   const savedLang = cookieStore.get("lang")?.value;
-  let detectedLang = "en"; // Default inglese
+  let detectedLang = "en";
 
   if (savedLang) {
     detectedLang = savedLang === "it" ? "it" : "en";
