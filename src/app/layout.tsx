@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers, cookies } from "next/headers";
 import ReCaptchaProvider from "@/components/ReCaptchaProvider";
@@ -83,9 +83,7 @@ export const metadata: Metadata = {
     ],
   },
 
-  manifest: "/webmanifest",
-
-  themeColor: "#02040a",
+  manifest: "/manifest.webmanifest",
 
   appleWebApp: {
     capable: true,

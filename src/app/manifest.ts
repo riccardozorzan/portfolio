@@ -13,6 +13,7 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
   } else {
     const headersList = await headers();
     const acceptLanguage = headersList.get("accept-language") || "";
+
     if (acceptLanguage.toLowerCase().includes("it")) {
       lang = "it";
     }
@@ -21,22 +22,24 @@ export default async function manifest(): Promise<MetadataRoute.Manifest> {
   const dict = translations[lang];
 
   return {
+    id: "/",
     name: dict.meta.title,
     short_name: dict.meta.shortName,
     description: dict.meta.description,
     start_url: "/",
+    scope: "/",
     display: "standalone",
     background_color: "#02040a",
     theme_color: "#02040a",
     icons: [
       {
-        src: "/icon",
-        sizes: "32x32",
+        src: "/icon-192.png",
+        sizes: "192x192",
         type: "image/png",
       },
       {
-        src: "/apple-icon",
-        sizes: "180x180",
+        src: "/icon-512.png",
+        sizes: "512x512",
         type: "image/png",
       },
     ],
