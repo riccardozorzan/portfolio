@@ -1,19 +1,19 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
+
+const baseUrl = "https://www.riccardozorzan.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://riccardozorzan.com";
-
   return [
     {
-      url: `${baseUrl}`,
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1.0,
+      priority: 1,
       alternates: {
         languages: {
           en: `${baseUrl}?lang=en`,
           it: `${baseUrl}?lang=it`,
-          "x-default": `${baseUrl}`,
+          "x-default": baseUrl,
         },
       },
     },
