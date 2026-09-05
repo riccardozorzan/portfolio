@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { headers, cookies } from "next/headers";
+import { Analytics } from "@vercel/analytics/next";
 import ReCaptchaProvider from "@/components/ReCaptchaProvider";
 import "./globals.css";
 
@@ -109,6 +110,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#02040a",
+};
+
 export default async function RootLayout({
   children,
 }: {
@@ -151,6 +156,8 @@ export default async function RootLayout({
         <ReCaptchaProvider>
           {children}
         </ReCaptchaProvider>
+
+        <Analytics />
       </body>
     </html>
   );
