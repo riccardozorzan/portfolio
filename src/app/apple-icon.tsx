@@ -18,8 +18,6 @@ export default function AppleIcon() {
           alignItems: "center",
           justifyContent: "center",
           background: "#02040a",
-          borderRadius: "36px",
-          border: "2px solid rgba(6, 182, 212, 0.3)",
         }}
       >
         <svg
@@ -42,8 +40,6 @@ export default function AppleIcon() {
         </svg>
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }
